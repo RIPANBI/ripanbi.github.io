@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile | Nipul</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <script src="assets/js/script.js" defer></script>
+    <style>
+        iframe::-webkit-scrollbar { display: none; }
+    </style>
+</head>
+<body>
+    <div class="page-wrap">
+<header class="site-header">
+  <div class="site-identity">
+    <a href="#"><img src="assets/images/logo.png" alt="IIT Indore" /></a>
+    <h1>Nipul G. Shihora</h1>
+<!--     <button id="theme-toggle">Toggle Dark Mode</button> -->
+  </div>  
+</header>
+        <aside class="side-nav">
+            <img src="assets/images/nipulgs.png" alt="Profile Photo" class="profile-pic">
+            <nav>
+                <ul>
+                    <li onclick="loadContent('pages/about.html')">About</li>
+                    <li onclick="loadContent('pages/responsibilities.html')">Responsibilities</li>
+                    <li onclick="loadContent('pages/projects.html')">Projects</li>
+                    <li onclick="loadContent('pages/publications.html')">Publications</li>
+                    <li onclick="loadContent('pages/contact.html')">Contact</li>
+                </ul>
+            </nav>
+           <button onclick="window.print()">Print CV</button>
+        </aside>
+        <main>
+            <iframe id="content-frame" name="content-frame" src="pages/about.html" frameborder="0"></iframe>
+        </main>
+        <footer>
+            <p>&copy; 2025 Nipul Gordhanbhai Shihora</p>
+        </footer>
+    </div>
+</body>
+</html>
